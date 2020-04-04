@@ -14,7 +14,32 @@ docker-compose up -d
 
 ``` docker  
 docker-compose logs -f
+```
+* #### __Install PM2__  
+
+```
+npm install -g pm2
+```
+The -g option tells npm to install the module globally, so that it’s available system-wide.
+
+* #### __Manage Application with PM2__  
+```
+pm2 start index.js
+```
+* #### __Restart an application with this command (specify the PM2 App name or id):__  
 ```  
+pm2 restart <app_name or id>    
+```  
+* #### __Stop an application with this command (specify the PM2 App name or id):__  
+```
+pm2 stop  <app_name or id>  
+```
+
+
+* #### __The PM2 process monitor can be pulled up with the monit subcommand. This displays the application status, CPU, and memory usage:__  
+```
+pm2 monit
+```
 
 
 ***
