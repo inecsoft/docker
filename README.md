@@ -15,14 +15,14 @@ docker-compose up -d
 ``` docker  
 docker-compose logs -f
 ```
-* #### __Install PM2__  
+* #### __Install PM2 with package installer npm:__  
 
 ```
 npm install -g pm2
 ```
 The -g option tells npm to install the module globally, so that it’s available system-wide.  
 
-  * ##### __app sample__  
+    - ##### __App sample__  
     ```
     var http = require('http');
     http.createServer(function (req, res) {
