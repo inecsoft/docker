@@ -7,7 +7,7 @@
 * #### __Run your database in docker__
 docker run --name postgres -e POSTGRES_PASSWORD=password123 -e POSTGRES_PASSWORD=postgres -d postgres
 
-* #### __Connect to the container_
+* #### __Connect to the container__
 
 docker exec -it postges psql -U postgres
 
@@ -23,20 +23,20 @@ CREATE ROLE me WITH LOGIN PASSWORD 'password';
 ```
 ALTER ROLE me CREATEDB;
 
-#list users
+#List users
 \du
 
-#exit
+#Exit
 \q
 
-psql -U me -d postgres -W
+psql -U me -d api -W
 
 CREATE DATABASE api;
 
-# list dbs
+#List dbs
 \list
 
-#connect to the new db
+#Connect to the new db
 \c api
 
 #Create a table
@@ -52,7 +52,7 @@ CREATE TABLE users (
 INSERT INTO users (name, email)
   VALUES ('Jerry', 'jerry@example.com'), ('George', 'george@example.com'), ('josepedro','josepedro@yahoo.es');
 
-#get data
+#Get data
 SELECT * FROM users;
   
 ```
