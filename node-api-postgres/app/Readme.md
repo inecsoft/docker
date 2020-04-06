@@ -77,6 +77,18 @@ or
 npm install pm2  
 pm2 start index.js  
 
+* #### __Now you can browse to the webpage__  
+http://localhost:3000/users or http://localhost:3000/users/1  
+
+* #### __POST__  
+curl --data "name=Elaine&email=elaine@example.com" http://localhost:3000/users
+
+* #### __PUT__  
+curl -X PUT -d "name=Kramer" -d "email=kramer@example.com" http://localhost:3000/users/1
+
+* #### __DELETE__  
+curl -X "DELETE" http://localhost:3000/users/1
+
 * ### __Create a database for the NodeJs portgresql CRUD example__
 node create-table.js
 
