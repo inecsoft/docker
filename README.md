@@ -23,7 +23,6 @@ npm install -g pm2
 
 The -g option tells npm to install the module globally, so that it’s available system-wide.  
 
-    - ##### __App sample__ 
     
     ```   
     var http = require('http');
