@@ -20,6 +20,7 @@ docker-compose logs -f
 ```
 npm install -g pm2
 ```
+
 The -g option tells npm to install the module globally, so that it’s available system-wide.  
 
     - ##### __App sample__ 
@@ -31,7 +32,9 @@ The -g option tells npm to install the module globally, so that it’s available
       res.end('Hello World\n');
       }).listen(8080, 'localhost');
       console.log('Server running at http://localhost:8080/');
-    ```  
+
+    ``` 
+
 * #### __Manage Application with PM2__  
 ```
 pm2 start index.js
